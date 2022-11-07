@@ -17,7 +17,7 @@
 				"module": "chaoscloud.probes.http", 
 				"func": "read_http_status_code", 
 				"arguments": {
-					"url": "http://13.213.244.18/cafe/"
+					"url": "http://44.196.84.172/cafe/"
 					}
 				}, 
 			"tolerance": {
@@ -43,7 +43,7 @@
 			"module": "chaosaws.ec2.actions", 
 			"func": "stop_instance", 
 			"arguments": {
-				"instance_id": "i-0c424478d5a595251"
+				"instance_id": "i-0a099a2930fb21cd9"
 			}
 		},
 		"pauses": {
@@ -61,7 +61,7 @@
 		  "module": "chaosaws.ec2.actions",
 		  "func": "detach_random_volume",
 		  "arguments": {
-			"instance_ids": ["i-0c424478d5a595251"]
+			"instance_ids": ["i-0a099a2930fb21cd9"]
 		 }
 		},
 		"pauses": {
@@ -76,7 +76,7 @@
 		  "module": "chaosaws.ec2.actions",
 		  "func": "start_instances",
 		  "arguments": {
-			"instance_ids": ["i-0c424478d5a595251"]
+			"instance_ids": ["i-0a099a2930fb21cd9"]
 		}
 		},
 		"pauses": {
@@ -91,7 +91,7 @@
 		"name": "website-must-still-respond",
 		"provider": {
 			"type": "http",
-			"url": "http://13.213.244.18/cafe/"
+			"url": "http://44.196.84.172/cafe/"
 		}
 	},
 	{
@@ -102,7 +102,7 @@
 		  "module": "chaosaws.ec2.actions",
 		  "func": "attach_volume",
 		  "arguments": {
-			"instance_ids": ["i-0c424478d5a595251"]
+			"instance_ids": ["i-0a099a2930fb21cd9"]
 		 }
 		},
 		"pauses": {
@@ -117,7 +117,7 @@
 		"name": "website-must-still-respond",
 		"provider": {
 			"type": "http",
-			"url": "http://13.213.244.18/cafe/"
+			"url": "http://44.196.84.172/cafe/"
 		}
 	}
 	]
